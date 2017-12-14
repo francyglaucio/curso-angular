@@ -19,7 +19,8 @@ export class ShoppingCartService{
     }
 
     removeItem(item:CarItem){
-        this.items.slice(this.items.indexOf(item),1)
+        console.log(item)
+        this.items.splice(this.items.indexOf(item),1)
     }
 
     total(): number{
